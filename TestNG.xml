@@ -1,0 +1,29 @@
+<suite name="MySuite">
+    <test name="FormTests" >
+        <classes>
+        <class name="MainTest">
+            <parameter name="appLogin" value="newqatester@mailinator.com" />
+            <parameter name="appPassword" value="newtesting12345" />
+            <parameter name="appName" value="NewTestQA" />
+            <methods>
+                <include name="addNewUser" />
+                <include name="checkRequiredFieldValidation" />
+                <include name="checkCreationUsersWithSameCredentionals" />
+                <include name="checkNonRequiredFieldsValidation" />
+                <include name="cancelAddUserForm" />
+            </methods>
+        </class>
+            <class name="SecondTask">
+                <parameter name="appLogin" value="qatester@mailinator.com" />
+                <parameter name="appPassword" value="testing12345" />
+                <parameter name="appName" value="TestQA" />
+                <methods>
+                    <include name="searchOrGetID" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
